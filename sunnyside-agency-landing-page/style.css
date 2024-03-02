@@ -1,4 +1,7 @@
 /*GLOBAL*/
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
@@ -8,7 +11,7 @@ html {
 }
 
 * {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Barlow','Times New Roman', Times, serif;
     font-size: 1.8rem;
     box-sizing: border-box;
     padding: 0;
@@ -26,7 +29,7 @@ a {
 }
 
 p, span {
-    opacity: .8;
+    opacity: .7;
 }
 
 /*HEADER*/
@@ -69,6 +72,7 @@ nav a:hover {
 
 #contact:hover {
     background-color: #72CEFE;
+    color: hsl(0, 0%, 98%);
 }
 
 h1 {
@@ -136,6 +140,9 @@ h1 {
     background-image: url("./images/desktop/image-photography.jpg");
 }
 
+h1, h2, h3, h4, #contact {
+    font-family: 'Fraunces', Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
 h2 {
     font-size: 3rem;
@@ -146,25 +153,29 @@ h3 {
     opacity: .8;
 }
 
+#grid a {
+    font-family: 'Fraunces', Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 .description p {
     margin-block: 3rem;
 }
 
 .description a {
     text-transform: uppercase;
-    border-bottom: 4px solid hsla(6, 99%, 69%, .7);
+    background: linear-gradient(transparent 0% 65%, hsla(6, 99%, 69%, .4) 65% 100%);
 }
 
 .description:first-of-type a {
-    border-bottom-color: hsla(50, 99%, 50%, .7);
+    background: linear-gradient(transparent 0% 65%, hsla(50, 99%, 50%, .4) 65% 100%);
 }
 
 .description a:hover {
-    background-color: hsla(6, 99%, 69%, .3);
+    background: linear-gradient(transparent 0% 65%, hsla(6, 99%, 69%, .7) 65% 100%);
 }
 
 .description:first-of-type a:hover {
-    background-color: hsla(50, 99%, 50%, .3);
+    background: linear-gradient(transparent 0% 65%, hsla(50, 99%, 50%, .7) 65% 100%);
 }
 
 #testimonials {
@@ -178,11 +189,11 @@ h3 {
     gap: 2rem;
 }
 
-#testimonials h2 {
-    opacity: .7;
+#testimonials h3 {
+    opacity: .6;
     text-align: center;
     letter-spacing: 6px;
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
     text-transform: uppercase;
 }
 
@@ -246,6 +257,19 @@ footer {
     margin-block: 6rem;
 }
 
+#socials img + img {
+    margin-left: 4rem;
+}
+
+#socials img {
+    transition: .3s all linear;
+}
+
+#socials img:hover {
+    cursor: pointer;
+    filter: brightness(100);
+}
+
 footer a:hover {
     color: hsl(0, 0%, 98%);
 }
@@ -287,10 +311,6 @@ footer a:hover {
         height: 38px;
         display: block;
         background: linear-gradient(hsl(0, 0%, 98%) 0 10%, transparent 10% 45%, hsl(0, 0%, 98%) 45% 55%, transparent 55% 90%, hsl(0, 0%, 98%) 90% 100%);
-    }
-
-    #toggle:active {
-        background: linear-gradient(hsl(0, 0%, 3%) 0 10%, transparent 10% 45%, black 45% 55%, transparent 55% 90%, black 90% 100%);
     }
 
     #nav-links {
